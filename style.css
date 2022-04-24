@@ -1,0 +1,225 @@
+/*INDEX*/
+*{
+  margin: 0;
+  padding: 0%;
+  font-family: 'Ubuntu', sans-serif;
+}
+h1{
+  text-align: center;
+  font-size: 64px;
+  color:#12F0FE;
+  font-style: oblique; 
+}
+header img{
+  height: 9vh;
+}
+button,
+.button{
+  padding: 10px;
+  background-color: #12F0FE;
+  text-decoration: none;
+  color: black;
+  border: none;
+  border-radius: 5%;
+  font-size: 1.1rem;
+}
+body{
+  background-image: url("imagenes/imagen_de_fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+footer{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: #777a76;
+}
+footer p{
+  font-size: 24px;
+}
+p{
+  font-size: 24px;
+}
+.topnav{
+  background-color: #777a76;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+.topnav a {
+  float: left;
+  color: #12F0FE;
+  margin-top: 0px;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav .logo-container{
+  margin-left: 4rem;
+  padding: 0;
+}
+.topnav a:hover {
+  background-color: #A5C1BC;
+  color: #01020A;
+}
+.topnav a.active {
+  background-color: #365EA2;
+  color: white;
+}
+header{
+  margin-top: 0px;
+  color: #365EA2;
+  height: 10vh;
+}
+header ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.redes-sociales{
+  display: flex;
+}
+.redes-sociales img{
+  width: 32px;
+  margin: 0 1rem;
+}
+.content-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+.content-container div{
+  margin-bottom: 4rem;
+}
+.caja{
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
+.grid-index{
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 0.4fr;
+  height: 80vh;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  margin: 0.5rem;
+  border-radius: 5%;
+  opacity: 1;
+  padding: 2rem;
+}
+
+.grid-item{
+  grid-column: 2/3;
+  margin: auto;
+  text-align: center;
+  border-radius: 2%;
+}
+
+.grid-item p{
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid-item .button{
+  margin-top: 1rem;
+}
+
+.grid-container{
+  width: 60vw;
+  height: 60vh;
+  margin: auto;
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.flag{
+  width: 48px;  
+}
+/*sobre_nostros*/
+.par{
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
+@media only screen and (max-width:768px) {
+  header ul{
+    flex-wrap: wrap;
+  }
+
+  .topnav .logo-container{
+    margin-left: 1rem;
+  }
+
+  header img{
+    height: 8vh;
+  }
+
+  .topnav a{
+    padding: 0;
+    margin: 0 1rem;
+  }
+
+  .grid-index{
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item{
+    grid-column: 1/2;
+    width: 90%;
+    margin: auto;
+  }
+
+  .card{
+    padding: 1rem;
+  }
+  footer{
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  footer p{
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+.grid-container{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+}
+
+
+
+
+/*.logo-container{
+  transform: translate(35%, 15%);
+}
+li.hover{
+  transition: transform1s;
+}
+li.hover{
+  transform: scale(1.5);
+}
+content.container{
+  animation-name: Rotartitulo;
+  animation-itineration-count: infinite;
+  
