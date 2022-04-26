@@ -161,6 +161,22 @@ header ul{
   margin-left: 4rem;
 }
 
+.button{
+  animation: aparecer-copado 1s ease-in-out infinite;
+}
+
+@keyframes aparecer-copado {
+  0% {
+    transform: scale(100%);
+  }
+  50%{
+    transform: scale(110%);
+  }
+  100%{
+    transform: scale(100%);
+  }
+}
+
 @media only screen and (max-width:768px) {
   header ul{
     flex-wrap: wrap;
@@ -207,19 +223,4 @@ header ul{
 }
 }
 
-
-
-
-/*.logo-container{
-  transform: translate(35%, 15%);
-}
-li.hover{
-  transition: transform1s;
-}
-li.hover{
-  transform: scale(1.5);
-}
-content.container{
-  animation-name: Rotartitulo;
-  animation-itineration-count: infinite;
   
