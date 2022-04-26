@@ -48,7 +48,7 @@ p{
   font-size: 24px;
 }
 .topnav{
-  background-color: #777a76;
+  background-image:linear-gradient(to left, rgb(31, 134, 138), rgb(207, 212, 211));
   overflow: hidden;
   display: flex;
   justify-content: space-between;
