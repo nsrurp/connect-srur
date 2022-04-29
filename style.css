@@ -47,32 +47,32 @@ footer p{
 p{
   font-size: 24px;
 }
-.topnav{
+
+.navbar{
   background-image:linear-gradient(to left, rgb(31, 134, 138), rgb(207, 212, 211));
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  padding: 0;
 }
-.topnav a {
+.container-fluid{
   float: left;
   color: #12F0FE;
   margin-top: 0px;
   text-align: center;
-  padding: 20px 40px;
   text-decoration: none;
   font-size: 20px;
 }
-.topnav .logo-container{
+.navbar .logo-container{
   margin-left: 4rem;
   padding: 0;
 }
-.topnav a:hover {
+.navbar a:hover {
   background-color: #A5C1BC;
   color: #01020A;
 }
-.topnav a.active {
+.tnavbarNav a.active {
   background-color: #365EA2;
   color: white;
 }
@@ -168,7 +168,9 @@ header ul{
 .card{
   animation: aparecer-desde-arriba ease-out 2s 1;
 }
-
+.nav-link{
+  margin: 1rem;
+}
 @keyframes pulsacion {
   0% {
     transform: scale(100%);
@@ -187,6 +189,12 @@ header ul{
   }
   to{
     transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .navbar{
+    padding: 0 !important;
   }
 }
 
@@ -235,5 +243,22 @@ header ul{
   grid-template-rows: 1fr;
 }
 }
+.nav-link{
+  font-size: 24px;
+}
 
-  
+ /*
+ PSEUDOCLASES
+ :hover
+ :focus
+ : checked
+ :nth-child(numero o palabras claves)
+ :not (selector)
+ Pseudoelementos
+ ::
+ pseudoclases se chequea entre dos elementos con ~ 
+ .hamburguesa_check:checked ~ manu_hamburguesa{
+   background
+   */
+   
+
