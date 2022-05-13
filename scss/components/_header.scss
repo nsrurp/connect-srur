@@ -1,0 +1,20 @@
+header img{
+    height: 9vh;
+  }
+  button,
+  .button{
+    padding: 10px;
+    background-color: #12F0FE;
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 5%;
+    font-size: 1.1rem;
+  }
+li{
+    font-size: map-get($map:tamanio-tipografia , $key:titulos );
+}
+.content-container{
+@extend %content-container;
+@include content-container(column, flex-start, center);
+}

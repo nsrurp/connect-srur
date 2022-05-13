@@ -1,0 +1,8 @@
+.pantalla{
+    @include media-query(mobile){
+        background-color: aquamarine;
+    }
+};
+@include media-query(tablet){
+    background-color: rgb(185, 206, 199);
+}

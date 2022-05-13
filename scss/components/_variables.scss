@@ -5,3 +5,48 @@ body{
     background-size: cover;
     background-position: center;
   }
+  /* MAPS */
+  $tamanio-tipografia: (
+    titulos: 24px,
+    subtitulos: 20px,
+    parrafos: 14px,
+    letra-chica: 12 px
+  );
+/* EXTEND */
+%content-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+};
+@mixin content-container ($flex-direction, $justify-content) {
+  text-align: center;
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  height: 80vh;
+  @if flex-direction == column {
+    justify-content: center;}
+  @else {
+    justify-content: space-around;
+  }
+}
+@mixin media-query ($pantalla) {
+  @if $pantalla== mobile { 
+    @media only screen and (max-width: 500px){
+      @content;  
+        }
+      };
+  @if $pantalla == tablet {
+    @media only screen and (max-width: 780px){
+      @content; 
+        }
+      };
+  @if $pantalla == desktop {
+    @media only screen and (max-width: 1024px){
+      @content;  
+     }
+    };
+  }
+
