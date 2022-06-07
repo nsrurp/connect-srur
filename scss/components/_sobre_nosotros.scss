@@ -7,3 +7,23 @@
     border-radius: 5%;
     font-size: 1.1rem;
 }
+.par{
+    margin-top: 4rem;
+    margin-left: 4rem;
+  }
+  
+  .button{
+    animation: pulsacion 1s ease-in-out infinite;
+  }
+  
+  .card{
+    animation: aparecer-desde-arriba ease-out 2s 1;
+  }
+  .nav-link{
+    margin: 1rem;
+  }
+  
+  .sobrenosotros-card{
+    min-height: calc(80vh - 7rem);
+    margin: 3.5rem;
+  }
