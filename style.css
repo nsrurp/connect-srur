@@ -119,6 +119,13 @@ header ul{
 .card-container{
   min-height: calc(80vh - 7rem);
   margin: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container .card{
+  width: 50%;
 }
 
 .card{
@@ -165,7 +172,15 @@ header ul{
 .sobrenosotros-card{
   min-height: calc(80vh - 7rem);
   margin: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.sobrenosotros-card .card{
+  width: 50%;
+}
+
 /*contacto*/
 .contacto-card{
   min-height: calc(80vh - 7rem);
